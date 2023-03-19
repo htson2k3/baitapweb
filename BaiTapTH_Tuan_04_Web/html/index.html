@@ -151,6 +151,117 @@
             border-left: 1px solid rgb(244,244,245) ;
         }
 
+        #participants
+        {
+            padding: 35px 50px 30px 30px;
+        }
+
+        #participants_top
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        #title
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #number
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(232,112,142);
+            background-color: rgb(253,242,244);
+            border-radius: 40px;
+            width: 25px;
+            height: 30px;
+            margin: 5px;
+        }
+
+        #add_button
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(230,95,129);
+            border: 1px solid rgb(230,95,129);
+            border-radius: 5px;
+            width: 70px;
+            height: 30px;
+        }
+
+        #participant_1,#participant_2,#participant_3,#participant_4
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .participant_name
+        {
+            display: flex;
+            align-items: center;
+        }
+
+        .participant_button
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 80px;
+        }
+
+        #chat
+        {
+            border-top: 1px solid rgb(244,244,245);
+            padding: 35px 50px 30px 30px;
+        }
+
+        #chat_1,#chat_2,#chat_3
+        {
+            padding: 10px;
+        }
+
+        .chat_info
+        {
+            display: flex;
+            align-items: center;
+            height: 40px;
+        }
+
+        .chat_name
+        {
+            font-weight: bold;
+            padding-left: 15px;
+            padding-right: 10px;
+        }
+
+        .chat_time
+        {
+            color: rgb(199,202,207);
+        }
+
+        .chat_messages
+        {
+            background-color: rgb(248,249,250);
+            border: 1px solid rgb(248,249,250);
+            border-radius: 3px;
+            margin-left: 50px;
+            padding: 10px;
+        }
+
+        #input
+        {
+            display: flex;
+            justify-content: space-between;
+        }
 
     </style>
 </head>
@@ -258,7 +369,156 @@
         </div>
 
         <div id="side">
-            
+            <div id="participants">
+                <div id="participants_top">
+                    <div id="title">
+                        <p style="font-size: 28px;font-weight: bold;margin: 0;">Participants</p>
+
+                        <div id="number">
+                            4
+                        </div>
+                    </div>
+
+                    <div id="add_button">
+                        <i class="fa-solid fa-plus" style="padding-right: 8px;font-size: 13px;"></i>
+                        Add
+                    </div>
+                </div>
+
+                <div id="participants_bottom">
+                    <div id="participant_1">
+                        <div class="participant_name">
+                            <img src="../img/avatar 1322.png" alt="" style="padding-right: 10px;">
+                            Benjamin Crawford
+                        </div>
+
+                        <div class="participant_button">
+                            <img src="../img/mic1.png" alt="">
+                            <img src="../img/cam_small.png" alt="">
+                            <i class="fa-solid fa-ellipsis" style="color: rgb(130,138,152);;"></i>
+                        </div>
+                    </div>
+
+                    <div id="participant_2">
+                        <div class="participant_name">
+                            <img src="../img/avatar 1323.png" alt="" style="padding-right: 10px;">
+                            Christian Scott
+                        </div>
+
+                        <div class="participant_button">
+                            <img src="../img/mic1.png" alt="">
+                            <img src="../img/cam_small.png" alt="">
+                            <i class="fa-solid fa-ellipsis" style="color: rgb(130,138,152);;"></i>
+                        </div>
+                    </div>
+
+                    <div id="participant_3">
+                        <div class="participant_name">
+                            <img src="../img/avatar 1324.png" alt="" style="padding-right: 10px;">
+                            Deborah Chu
+                        </div>
+
+                        <div class="participant_button">
+                            <img src="../img/mic1.png" alt="">
+                            <img src="../img/cam_small.png" alt="">
+                            <i class="fa-solid fa-ellipsis" style="color: rgb(130,138,152);;"></i>
+                        </div>
+                    </div>
+
+                    <div id="participant_4">
+                        <div class="participant_name">
+                            <img src="../img/avatar 1325.png" alt="" style="padding-right: 10px;">
+                            Jordan Nieves
+                        </div>
+
+                        <div class="participant_button">
+                            <img src="../img/mic1.png" alt="">
+                            <img src="../img/cam_small.png" alt="">
+                            <i class="fa-solid fa-ellipsis" style="color: rgb(130,138,152);;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="chat">
+                <p style="font-size: 28px;font-weight: bold;margin: 0;padding-bottom: 25px;">Chat</p>
+                <div id="chat_1">
+                    <div class="chat_info">
+                        <div class="chat_avatar">
+                            <img src="../img/avatar 1326.png" alt="">
+                        </div>
+    
+                        <div class="chat_name">
+                            Deborah Chu
+                        </div>
+    
+                        <div class="chat_time">
+                            1:12 PM
+                        </div>
+                    </div>
+                    
+                    <div class="chat_messages">
+                        Lorem excepteur magna voluptate exercitation dolore exercitation amet
+                    </div>
+                </div>
+                
+                <div id="chat_2">
+                    <div class="chat_info">
+                        <div class="chat_avatar">
+                            <img src="../img/avatar 1327.png" alt="">
+                        </div>
+    
+                        <div class="chat_name">
+                            Jordan Nieves
+                        </div>
+    
+                        <div class="chat_time">
+                            1:12 PM
+                        </div>
+                    </div>
+                    
+                    <div class="chat_messages">
+                        Eiusmod laborum culpa est magna cillum sint in elit proident magna anim consecte
+                    </div>
+                </div>
+
+                <div id="chat_3">
+                    <div class="chat_info">
+                        <div class="chat_avatar">
+                            <img src="../img/avatar 1328.png" alt="">
+                        </div>
+    
+                        <div class="chat_name">
+                            Benjamin Crawford
+                        </div>
+    
+                        <div class="chat_time">
+                            1:12 PM
+                        </div>
+                    </div>
+                    
+                    <div class="chat_messages" style="width: 83px;height: 30px;background-color: rgb(253,242,244);font-size: 20px;">
+                        🥰🥰🥰
+                    </div>
+                </div>
+
+                <div>
+                    <div class="chat_info">
+                        <div class="chat_avatar">
+                            <img src="../img/avatar 1329.png" alt="">
+                        </div>
+    
+                        <div class="chat_name">
+                            Christian Scott
+                        </div>
+                </div>
+                <div id="input">
+                    <input type="text" placeholder="Add Typing..." style="border: 1px solid rgb(243,244,246);background-color: rgb(243,244,246);border-radius: 3px;width: 325px;height: 35px;position: relative;opacity: 0.5;">
+                    <i class="fa-solid fa-face-smile" style="position: absolute;display: flex;align-items: center;width: 315px;height: 40px;justify-content: end;"></i>
+                    <img src="../img/send.png" alt="">
+                </div>
+                
+            </div>
         </div>
     </div>
 </body>
