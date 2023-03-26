@@ -8,50 +8,240 @@
     <link rel="stylesheet" href="../fontawesome-free-6.3.0-web/css/all.min.css">
     <title>Document</title>
     <style>
-
-        #top
-        {
+        #top {
             display: flex;
-            justify-content: space-between ;
+            justify-content: space-between;
             padding: 0px 29px 0px 25px;
-            border-bottom: 1px solid rgb(244,244,245);
+            border-bottom: 2px solid rgb(244, 244, 245);
             height: 60px;
         }
 
-        #top_left
-        {
+        #top_left {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        #menu
-        {
+        #menu {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             width: 480px;
         }
 
-        #top_right
-        {
+        #top_right {
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 500px;
         }
 
-        
+        #main {
+            margin: 50px 130px 0px 140px;
+        }
 
+        #product_rating {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #product_rating_right {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 200px;
+        }
+
+        .icon_button {
+            display: flex;
+            align-items: center;
+        }
+
+        #product_imgs
+        {
+            display: grid;
+            grid-template: 'main_img . .' 'main_img . .';
+            grid-gap: 16px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+
+        #main_img
+        {
+            grid-area: main_img;
+        }
+
+        #product_info
+        {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 50px;
+            border-bottom: 2px solid rgb(246,247,248);
+        }
+
+        #product_description
+        {
+            width: 780px;
+        }
+
+        #product_property
+        {
+            display: grid;
+            grid-template-columns: 190px 190px;
+            align-content: center;
+        }
+
+        #product_property div
+        {
+            display: flex;
+            align-items: center;
+        }
+
+        #product_property img
+        {
+            padding: 10px;
+        }
+
+        #product_buy
+        {
+            width: 300px;
+            border: 1px solid rgb(246,246,246);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        #product_buy select
+        {
+            width: 300px;
+            height: 30px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            background-color: rgb(243,244,246);
+            border-radius: 5px;
+            border: 1px solid rgb(243,244,246);
+        }
+
+        button
+        {
+            height: 40px;
+            width: 300px;
+            border: 1px solid rgb(0,189,214);
+            border-radius: 5px;
+            background-color: rgb(0,189,214);
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #review
+        {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border-bottom: 2px solid rgb(244, 244, 245);
+        }
+
+        .product_title
+        {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 25px;
+        }
+
+        .product_reviews_right
+        {
+            color: rgb(167,171,180);
+        }
+
+        #review_content
+        {
+            display: grid;
+            grid-template-columns: 540px 540px;
+            grid-row-gap: 20px;
+            grid-column-gap: 60px;
+            align-content: center;
+        }
+
+        .review_content_rating
+        {
+            display: flex;
+        }
+
+        .review_content_rating div
+        {
+            padding-left: 15px;
+            font-size: small;
+            color: rgb(208,210,215);
+        }
+
+        .review_content_rating span
+        {
+            font-weight: 100;
+            color: black;
+            font-weight: bold;
+            padding-right: 10px;
+            font-size: medium;
+        }
+
+        #related_product
+        {
+            padding-bottom: 100px;
+            border-bottom: 2px solid rgb(244, 244, 245);
+        }
+        
+        #other_product
+        {
+            display: grid;
+            grid-template-columns: 280px 280px 280px 280px;
+            grid-gap: 20px;
+            
+        }
+
+        .product
+        {
+            border: 1px solid rgb(247,247,248);
+            border-radius: 10px;
+        }
+
+        .product > img
+        {
+            width: 278px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .other_product_info
+        {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            padding-top: 20px;
+            border: 1px solid rgb(246,246,246);
+            border-top: none;
+            border-radius: 10px;
+            margin-top: -10px;
+        }
+
+        .other_product_left
+        {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .other_product_right
+        {
+            text-align: end;
+        }
     </style>
 </head>
 
-<body>
+<body style="width: 1445px;">
     <div id="top">
         <div id="top_left">
             <img src="../imgs/Image 1710.png" alt="" style="padding-right: 25px;height: 25px;">
             <div id="menu">
-                <div style="color: rgb(26,196,218);font-weight: bold;border-bottom: 4px solid rgb(26,196,218);border-radius: 1px;height: 35px;margin-top: 21px;width: 65px;text-align: center;">Home</div>
+                <div
+                    style="color: rgb(26,196,218);font-weight: bold;border-bottom: 4px solid rgb(26,196,218);border-radius: 1px;height: 35px;margin-top: 21px;width: 65px;text-align: center;">
+                    Home</div>
                 <div>Promotions</div>
                 <div>Best-sellers</div>
                 <div>New releases</div>
@@ -60,7 +250,8 @@
         </div>
 
         <div id="top_right">
-            <input type="text" placeholder="          Search..." style="height: 30px;width: 330px;border: 1px solid white;background-color: rgb(0, 0, 0, 0.07);border-radius: 5px;position: relative;opacity: 0.5;">
+            <input type="text" placeholder="          Search..."
+                style="height: 30px;width: 330px;border: 1px solid white;background-color: rgb(0, 0, 0, 0.07);border-radius: 5px;position: relative;opacity: 0.5;">
             <i class="fa-solid fa-magnifying-glass" style="position: absolute;padding-left: 15px;font-size: 15px;"></i>
             <img src="../imgs/Bell 1.png" alt="">
             <img src="../imgs/Shopping cart simple 1.png" alt="">
@@ -69,6 +260,208 @@
     </div>
 
     <div id="main">
+        <div id="product">
+            <span style="color: rgb(167,171,180);">Home / Category / </span>Product title
+            <p style="font-size: 60px;font-weight: bold;margin-bottom: 20px;margin-top: 8px;">Product title</p>
+            <div id="product_rating">
+                <div>
+                    <img src="../imgs/Rating 317.png" alt=""><span style="font-weight: bolder;"> 4.20 </span><span
+                        style="color: rgb(155,160,170);">(99 reviews)</span>
+                </div>
+
+                <div id="product_rating_right">
+                    <div class="icon_button">
+                        <img src="../imgs/share.png" alt="" style="width: 18px;opacity: 0.6;"><span
+                            style="padding-left: 5px;">Share</span>
+                    </div>
+
+                    <div class="icon_button">
+                        <img src="../imgs/Heart.png" alt="" style="width: 13px;opacity: 0.6;"><span
+                            style="padding-left: 5px;">Save</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="product_imgs">
+                <img id="main_img" src="../imgs/Image 1705.png" alt="">
+                <img src="../imgs/Image 1708.png" alt="">
+                <img src="../imgs/Image 1707.png" alt="">
+                <img src="../imgs/Image 1706.png" alt="">
+                <img src="../imgs/Image 1709.png" alt="">
+            </div>
+
+            <div id="product_info">
+                <div id="product_description">
+                    <p style="font-weight: bold;font-size: 30px;margin-top: 0px;margin-bottom: 10px;">Product description</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quod. Placeat, quisquam, nesciunt eius neque eligendi consequatur atque distinctio aliquid voluptate exercitationem fugit nemo. Quibusdam earum nulla mollitia sit ipsam, error ducimus rerum quia explicabo odit. <br>Saepe modi nesciunt assumenda eligendi sint deleniti provident doloremque molestias nisi quas, facere quis. Repellendus commodi rem numquam ratione vel aliquam molestias itaque corrupti. Laborum harum veritatis mollitia sequi voluptatum eveniet aperiam iusto placeat totam vel, tenetur illum eum rem, error ipsa officia accusamus omnis deleniti, eligendi.</p>
+
+                    <div id="product_property">
+                        <div><img src="../imgs/Truck 1.png" alt="">Free delivery</div>
+                        <div><img src="../imgs/Arrow bend up left 1.png" alt="">7 days return</div>
+                        <div><img src="../imgs/Globe 1.png" alt="">Made in USA</div>
+                        <div><img src="../imgs/Medal 1.png" alt="">2 years guarantee</div>
+                        <div><img src="../imgs/Chat dots 1.png" alt="">100% authentic</div>
+                        <div><img src="../imgs/Checks 1.png" alt="">24/7 customer support</div>
+                        
+                    </div>
+                </div>
+
+                <div id="product_buy">
+                    <p style="color: rgb(0,189,214);font-size: 40px;font-weight: bold;text-align: right;margin-top: 0px;margin-bottom: 15px;">$99</p>
+                    <select name="" id="">
+                        <option value="" disabled selected>Color</option>
+                    </select>
+
+                    <select name="" id="">
+                        <option value="" disabled selected>Size</option>
+                    </select>
+
+                    <select name="" id="">
+                        <option value="" disabled selected>3</option>
+                    </select>
+                    <div style="color: rgb(155,160,170);padding-top: 15px;">Total <span style="float: right;font-weight: bold;color: black;">$295</span></div>
+                    <button>Buy now</button>
+                    <button style="background-color: white;color: rgb(0,189,214);display: flex;align-items: center;justify-content: center;"><img src="../imgs/shopping-cart.png" alt="" style="color: rgb(0,189,214);padding-right: 5px;">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="review">
+            <div class="product_title">
+                <div style="display: flex;align-items: center;">
+                    <span style="font-size: 30px;font-weight: bold;">Reviews</span> 
+                    <img src="../imgs/Rating 304.png" alt="" style="padding-left: 10px;padding-right: 5px;"><span style="font-weight: bolder;"> 4.20 </span><span
+                        style="color: rgb(155,160,170);padding-left: 5px;">(99 reviews)</span>
+                </div>
+
+                <div class="product_reviews_right">
+                    Showing all reviews
+                    <i class="fa-solid fa-chevron-right" style="font-size: 15px;padding-left: 10px;"></i>
+                </div>
+            </div>
+
+            <div id="review_content">
+                <div>
+                    <div class="review_content_rating">
+                        <img src="../imgs/Avatar 753.png" alt="" style="width: 40px;">
+                        <div>
+                            <span>Jay Rutherford</span>3d ago<br>
+                            <img src="../imgs/Rating 300.png" alt="" style="padding-top: 2px;">
+                        </div>
+                        
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quas omnis voluptatum tempore dicta, veniam odit libero.</p>
+                </div>
+                <div>
+                    <div class="review_content_rating">
+                        <img src="../imgs/Avatar 756.png" alt="" style="width: 40px;">
+                        <div>
+                            <span>Nicole Chung</span>3d ago<br>
+                            <img src="../imgs/Rating 300.png" alt="" style="padding-top: 2px;">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quas omnis voluptatum tempore dicta, veniam odit libero corporis iure ipsa.</p>
+                </div>
+                <div>
+                    <div class="review_content_rating">
+                        <img src="../imgs/Avatar 755.png" alt="" style="width: 40px;">
+                        <div>
+                            <span>Wei Arnold</span>3d ago<br>
+                            <img src="../imgs/Rating 300.png" alt="" style="padding-top: 2px;">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quas omnis voluptatum tempore dicta, veniam odit libero corporis iure ipsa labore.</p>
+                </div>
+
+                <div>
+                    <div class="review_content_rating">
+                        <img src="../imgs/Avatar 757.png" alt="" style="width: 40px;">
+                        <div>
+                            <span>Judith Mejia</span>3d ago<br>
+                            <img src="../imgs/Rating 300.png" alt="" style="padding-top: 2px;">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quas omnis voluptatum tempore dicta, veniam odit libero corporis iure ipsa.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="related_product">
+            <div class="product_title" style="padding-top: 45px;padding-bottom: 30px;">
+                    <span style="font-size: 30px;font-weight: bold;">Related products</span> 
+
+                <div class="product_reviews_right">
+                    See more
+                    <i class="fa-solid fa-chevron-right" style="font-size: 15px;padding-left: 10px;"></i>
+                </div>
+            </div>
+
+            <div id="other_product">
+                <div class="product">
+                    <img src="../imgs/Image 1704.png" alt="">
+                    <div class="other_product_info">
+                        <div class="other_product_left">
+                            Product title <br>
+                            <p style="margin-top: 5px;margin-bottom: 5px;color: rgb(26,196,218);font-size: 20px;">$230</p>
+                            <img src="../imgs/Rating 301.png" alt="">
+                        </div>
+    
+                        <div class="other_product_right">
+                            <img src="../imgs/Heart 23.png" alt="">
+                            <p style="padding-top: 30px;color: rgb(177,181,189);font-size: 12px;">1000 items sold</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../imgs/Image 1703.png" alt="">
+                    <div class="other_product_info">
+                        <div class="other_product_left">
+                            Product title <br>
+                            <p style="margin-top: 5px;margin-bottom: 5px;color: rgb(26,196,218);font-size: 20px;">$199</p>
+                            <img src="../imgs/Rating 299.png" alt="">
+                        </div>
+    
+                        <div class="other_product_right">
+                            <img src="../imgs/Heart 23.png" alt="">
+                            <p style="padding-top: 30px;color: rgb(177,181,189);font-size: 12px;">765 items sold</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../imgs/Image 1711.png" alt="">
+                    <div class="other_product_info">
+                        <div class="other_product_left">
+                            Product title <br>
+                            <p style="margin-top: 5px;margin-bottom: 5px;color: rgb(26,196,218);font-size: 20px;">$299</p>
+                            <img src="../imgs/Rating 317.png" alt="">
+                        </div>
+    
+                        <div class="other_product_right">
+                            <img src="../imgs/Heart 23.png" alt="">
+                            <p style="padding-top: 30px;color: rgb(177,181,189);font-size: 12px;">360 items sold</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../imgs/Image 1712.png" alt="">
+                    <div class="other_product_info">
+                        <div class="other_product_left">
+                            Product title <br>
+                            <p style="margin-top: 5px;margin-bottom: 5px;color: rgb(26,196,218);font-size: 20px;">$99</p>
+                            <img src="../imgs/Rating 318.png" alt="">
+                        </div>
+    
+                        <div class="other_product_right">
+                            <img src="../imgs/Heart 23.png" alt="">
+                            <p style="padding-top: 30px;color: rgb(177,181,189);font-size: 12px;">234 items sold</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="bottom">
