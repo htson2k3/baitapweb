@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+    <div>
+        <h1>Stop Watch</h1>
+        <p><span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span
+                id="milisecond">00</span></p>
+    </div>
+
+    <button id="Start">Start</button>
+    <button id="Stop">Stop</button>
+    <button id="Reset">Reset</button>
+</body>
+
+<script>
+    var $ = document;
+    function getID(id) {
+        return $.getElementById(id)
+    }
+
+    var Start = getID('Start');
+    var Stop = getID('Stop');
+    var Reset = getID('Reset');
+    var hour = 0;
+    var minute = 0;
+    var second = 0;
+    var milisecond = 0;
+    var interval;
+    var appendmilisecond = getID('milisecond');
+    var appendsecond = getID('second');
+    var appendminute = getID('minute');
+    var appendhour = getID('hour');
+
+    function starttimer() {
+        milisecond++;
+
+        if (milisecond <= 9) {
+            appendmilisecond.innerHTML = "0" + milisecond;
+        }
+
+        if (milisecond > 9) {
+            appendmilisecond.innerHTML = milisecond;
+        }
+
+        if (milisecond > 99) {
+            second++;
+            appendsecond.innerHTML = "0" + second;
+            milisecond = 0;
+            appendmilisecond.innerHTML = "0";
+        }
+
+        if (second > 9) {
+            appendsecond.innerHTML = second;
+        }
+
+        if (second > 59) {
+            minute++;
+            appendminute.innerHTML = "0" + minute;
+            second = 0;
+            appendsecond.innerHTML = "0";
+        }
+
+        if (minute > 9) {
+            appendminute.innerHTML = minute;
+        }
+
+        if (minute > 59) {
+            hour++;
+            appendhour.innerHTML = "0" + hour;
+            minute = 0;
+            appendminute.innerHTML = "0";
+        }
+
+        if (hour > 9) {
+            appendhour.innerHTML = hour;
+        }
+    }
+
+    Start.onclick = function () {
+        clearInterval(interval);
+        interval = setInterval(starttimer, 10);
+    }
+
+    Stop.onclick = function () {
+        clearInterval(interval);
+    }
+
+
+    Reset.onclick = function () {
+        clearInterval(interval);
+        milisecond = "00";
+        second = "00";
+        minute = "00";
+        hour = "00";
+        appendmilisecond.innerHTML = milisecond;
+        appendsecond.innerHTML = second;
+        appendminute.innerHTML = minute;
+        appendhour.innerHTML = hour;
+    }
+
+
+
+</script>
+
+</html>
